@@ -3,18 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jonathan Ochiedike : AI & Automation Specialist</title>
-<meta name="description" content="Jonathan Ochiedike, AI and Automation Specialist and Consultant. Building voice agents, AI powered workflows, and automation systems for restaurants, real estate, and growth focused businesses.">
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jonathan Ochiedike : AI and Automation Specialist">
-<meta property="og:description" content="AI and Automation Consultant building voice agents, AI powered workflows, and automation systems for real businesses.">
-<meta property="og:image" content="preview.jpg">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Jonathan Ochiedike : AI and Automation Specialist">
-<meta name="twitter:description" content="AI and Automation Consultant building voice agents, AI powered workflows, and automation systems for real businesses.">
-<meta name="twitter:image" content="preview.jpg">
+<title>Jonathan Ochiedike | AI & Automation Specialist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -218,8 +207,6 @@
     box-shadow:var(--glass-shadow), inset 0 1px 1px rgba(255,255,255,.08);
   }
   .btn-outline:hover{ background:rgba(255,94,26,.16); border-color:var(--orange); color:var(--orange-bright); transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,94,26,.22); }
-  .btn-youtube:hover{ background:linear-gradient(160deg, #FF0000, #8A0000); border-color:#FF0000; color:#F5F3EF; transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,0,0,.35), inset 0 1px 1px rgba(0,0,0,.25); }
-  .btn-youtube:hover svg{ fill:#F5F3EF; }
 
   /* ===== Section headings ===== */
   .sec-head{ display:flex; align-items:baseline; gap:14px; margin-bottom:32px; }
@@ -235,39 +222,25 @@
   .sec-title .accent{ color:var(--orange); }
 
   /* ===== Skills ===== */
-  .skill-categories{
-    display:grid; grid-template-columns:repeat(2, 1fr); gap:14px;
+  .skill-grid{
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:12px;
   }
-  @media (max-width:560px){ .skill-categories{ grid-template-columns:1fr; } }
-  .skill-category{
+  @media (max-width:560px){ .skill-grid{ grid-template-columns:1fr; } }
+  .skill-chip{
     background:var(--glass-bg);
     backdrop-filter:blur(16px);
     -webkit-backdrop-filter:blur(16px);
     border:1px solid var(--glass-border);
     border-left:3px solid var(--orange);
-    border-radius:10px;
-    padding:16px 18px;
-    box-shadow:var(--glass-shadow), inset 0 1px 1px rgba(255,255,255,.06);
-    transition:border-color .2s, background .2s;
-  }
-  .skill-category:hover{ background:var(--glass-bg-hover); border-color:var(--orange); }
-  .skill-cat-title{
-    font-family:'Space Grotesk', sans-serif;
-    font-weight:600;
+    border-radius:8px;
+    padding:14px 16px;
     font-size:14px;
-    color:var(--orange-bright);
-    margin-bottom:10px;
-  }
-  .skill-tags{ display:flex; flex-wrap:wrap; gap:8px; }
-  .skill-tag{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12.5px;
     color:#E4E0DA;
-    background:rgba(255,255,255,.05);
-    border:1px solid var(--glass-border);
-    border-radius:6px;
-    padding:5px 10px;
+    font-family:'JetBrains Mono', monospace;
+    box-shadow:var(--glass-shadow), inset 0 1px 1px rgba(255,255,255,.06);
+    transition:border-color .2s, background .2s, transform .2s;
   }
+  .skill-chip:hover{ background:var(--glass-bg-hover); border-color:var(--orange); transform:translateY(-2px); }
 
   /* ===== Projects ===== */
   .project{
@@ -300,76 +273,22 @@
     font-size:14.5px;
     color:#C6C1BA;
   }
-  .project-link{
-    display:inline-flex; align-items:center; gap:6px;
-    margin-top:14px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:12.5px;
-    color:var(--orange-bright);
-    border-bottom:1px solid transparent;
-    transition:border-color .2s, color .2s, gap .2s;
-  }
-  .project-link:hover{ border-color:var(--orange-bright); gap:9px; }
-  .project-link svg{ width:13px; height:13px; }
 
-  /* ===== How I Work ===== */
-  .how-steps{ display:flex; flex-direction:column; gap:22px; }
-  .how-step{ display:flex; gap:18px; }
-  .how-step-num{
-    flex-shrink:0;
-    width:38px; height:38px;
-    border:1px solid var(--glass-border);
-    border-radius:50%;
-    display:flex; align-items:center; justify-content:center;
-    font-family:'JetBrains Mono', monospace;
-    font-size:13px;
-    color:var(--orange-bright);
-    background:var(--glass-bg);
+  .project-list{ list-style:none; }
+  .project-list li{
+    position:relative; padding-left:18px; margin-bottom:8px;
+    font-size:14.5px; color:#C6C1BA;
   }
-  .how-step-title{
-    font-family:'Space Grotesk', sans-serif;
-    font-weight:600;
-    font-size:16px;
-    color:#F5F3EF;
-    margin-bottom:6px;
-  }
-  .how-step-desc{ font-size:14.5px; color:#C6C1BA; }
-  .how-closing{
-    margin-top:26px;
-    padding:20px 24px;
-    background:var(--glass-bg);
-    border-left:3px solid var(--orange);
-    border-radius:var(--radius);
-    font-style:italic;
-    font-size:15px;
-    color:#E4E0DA;
+  .project-list li:last-child{ margin-bottom:0; }
+  .project-list li::before{
+    content:""; position:absolute; left:0; top:.68em;
+    width:6px; height:6px; border-radius:50%; background:var(--orange);
   }
 
-  /* ===== Testimonials ===== */
-  .testimonial{
-    background:var(--glass-bg);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-    border:1px solid var(--glass-border);
-    border-left:3px solid var(--orange);
-    border-radius:var(--radius);
-    padding:24px 26px;
-    margin-bottom:16px;
-    box-shadow:var(--glass-shadow), inset 0 1px 1px rgba(255,255,255,.06);
-  }
-  .testimonial-quote{
-    font-size:15px;
-    color:#E4E0DA;
-    font-style:italic;
-    margin-bottom:14px;
-  }
-  .testimonial-source{
-    font-family:'JetBrains Mono', monospace;
-    font-size:12px;
-    color:var(--orange-bright);
-    text-transform:uppercase;
-    letter-spacing:.06em;
-  }
+  .cta{ padding:0 0 12px 34px; }
+  .cta p{ font-size:15.5px; color:#CFCAC4; max-width:560px; margin-bottom:16px; }
+  .cta .btn-row{ justify-content:flex-start; }
+  @media (max-width:900px){ .cta{ padding-left:0; } }
 
   /* ===== Education ===== */
   .edu-panel{
@@ -404,12 +323,11 @@
 
 <div class="noise"></div>
 <div class="rail">
-  <div class="node" style="top:10%"></div>
-  <div class="node" style="top:26%"></div>
-  <div class="node" style="top:42%"></div>
-  <div class="node" style="top:58%"></div>
-  <div class="node" style="top:74%"></div>
-  <div class="node" style="top:90%"></div>
+  <div class="node" style="top:12%"></div>
+  <div class="node" style="top:32%"></div>
+  <div class="node" style="top:52%"></div>
+  <div class="node" style="top:70%"></div>
+  <div class="node" style="top:88%"></div>
 </div>
 
 <div class="wrap">
@@ -420,11 +338,11 @@
       <div>
         <div class="kicker">Portfolio / 2026</div>
         <div class="name">Jonathan Ochiedike</div>
-        <div class="role">AI &amp; Automation Specialist / Consultant <span>· Building systems that ship</span></div>
+        <div class="role">AI &amp; Automation Specialist and Executive Assistant <span>· Building systems that ship</span></div>
       </div>
     </div>
 
-    <p class="summary">I started out as an accountant, but over the past couple of years I've found myself gearing toward building things, specifically automation systems that solve real problems for real businesses. What began as curiosity turned into hands-on work: designing workflows, integrating AI into client systems, and shipping tools that people actually use, from study bots to membership management systems to content pipelines. I bring the discipline and structured thinking of a finance background to how I build, and I'm now deepening my technical grounding in AI/ML to go further into this space.</p>
+    <p class="summary">I started out as an accountant, but over the past couple of years I've found myself gearing toward building things, specifically automation systems that solve real problems for real businesses. What began as curiosity turned into hands-on work: designing workflows, integrating AI into client systems, and shipping tools that people actually use, from study bots to membership management systems to content pipelines. I also work as an Executive Assistant at Ardent Ltd, handling investor receipts, payments and records every day, which is where many of my automation ideas start. I bring the discipline and structured thinking of a finance background to how I build, and I'm now deepening my technical grounding in AI/ML to go further into this space.</p>
 
     <div class="btn-row">
       <a class="btn btn-solid" href="https://www.linkedin.com/in/jonathan-ochiedike/" target="_blank" rel="noopener">
@@ -443,14 +361,6 @@
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.68 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0 1 22 16.92z"/></svg>
         Call
       </a>
-      <a class="btn btn-outline btn-youtube" href="https://youtube.com/@joautomates?si=l0FbSn5KiaU-zlHw" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.4 31.4 0 0 0 0 12a31.4 31.4 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 24 12a31.4 31.4 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg>
-        YouTube
-      </a>
-      <a class="btn btn-solid" href="JONATHAN_OCHIEDIKE_CV.pdf" download>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
-        Download CV
-      </a>
     </div>
   </section>
 
@@ -459,152 +369,40 @@
       <span class="sec-num">01</span>
       <h2 class="sec-title">Skill <span class="accent">Set</span></h2>
     </div>
-    <div class="skill-categories">
-      <div class="skill-category">
-        <div class="skill-cat-title">Automation Platforms</div>
-        <div class="skill-tags">
-          <span class="skill-tag">n8n</span>
-          <span class="skill-tag">Make.com</span>
-          <span class="skill-tag">Zapier</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <div class="skill-cat-title">AI &amp; LLM Integration</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Claude API</span>
-          <span class="skill-tag">OpenAI API</span>
-          <span class="skill-tag">RAG</span>
-          <span class="skill-tag">AI Agents</span>
-          <span class="skill-tag">Prompt Engineering</span>
-          <span class="skill-tag">Generative AI</span>
-          <span class="skill-tag">Voice AI Agents</span>
-          <span class="skill-tag">Whisper</span>
-          <span class="skill-tag">AI/ML Fundamentals</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <div class="skill-cat-title">AI Infrastructure</div>
-        <div class="skill-tags">
-          <span class="skill-tag">LangChain</span>
-          <span class="skill-tag">Pinecone</span>
-          <span class="skill-tag">AWS</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <div class="skill-cat-title">Databases &amp; Backend</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Airtable</span>
-          <span class="skill-tag">Supabase</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <div class="skill-cat-title">Team &amp; Productivity Tools</div>
-        <div class="skill-tags">
-          <span class="skill-tag">Slack</span>
-          <span class="skill-tag">Notion API</span>
-          <span class="skill-tag">Google Sheets &amp; Workspace</span>
-          <span class="skill-tag">ClickUp</span>
-        </div>
-      </div>
-
-      <div class="skill-category">
-        <div class="skill-cat-title">Integration &amp; Development</div>
-        <div class="skill-tags">
-          <span class="skill-tag">API &amp; Webhook Integration</span>
-          <span class="skill-tag">CRM Automation</span>
-          <span class="skill-tag">HTML / CSS</span>
-          <span class="skill-tag">Claude Code</span>
-        </div>
-      </div>
+    <div class="skill-grid">
+      <div class="skill-chip">n8n Workflow Automation</div>
+      <div class="skill-chip">AI Integration: Claude API, RAG, AI Agents</div>
+      <div class="skill-chip">Airtable &amp; Supabase</div>
+      <div class="skill-chip">AI/ML Fundamentals</div>
+      <div class="skill-chip">HTML / CSS</div>
+      <div class="skill-chip">Claude Code</div>
+      <div class="skill-chip">Accounting, Bookkeeping &amp; Reconciliation</div>
+      <div class="skill-chip">Research &amp; Data Analysis</div>
     </div>
-  </section>
-
-  <section id="howiwork">
-    <div class="sec-head">
-      <span class="sec-num">02</span>
-      <h2 class="sec-title">How I <span class="accent">Work</span></h2>
-    </div>
-
-    <div class="how-steps">
-      <div class="how-step">
-        <div class="how-step-num">01</div>
-        <div>
-          <div class="how-step-title">Discovery</div>
-          <p class="how-step-desc">I start by identifying the actual bottleneck, not just the tool being requested. Most clients want the work made easier, and if you let them, they will try to automate everything. But the truth is, some things still need manual effort for authenticity.</p>
-        </div>
-      </div>
-
-      <div class="how-step">
-        <div class="how-step-num">02</div>
-        <div>
-          <div class="how-step-title">Design</div>
-          <p class="how-step-desc">I map out the full workflow before touching any tool or platform: what data moves where, and what happens when a step fails. The tool I end up using, whether that's n8n, Make, or something custom, comes out of that decision, not the other way around.</p>
-        </div>
-      </div>
-
-      <div class="how-step">
-        <div class="how-step-num">03</div>
-        <div>
-          <div class="how-step-title">Build</div>
-          <p class="how-step-desc">I build in stages, testing and debugging as I go. The way I see it, a Mercedes or a Toyota isn't built as one solid piece, every part is tested on its own before it gets coupled into the final vehicle. I build systems the same way.</p>
-        </div>
-      </div>
-
-      <div class="how-step">
-        <div class="how-step-num">04</div>
-        <div>
-          <div class="how-step-title">Handoff</div>
-          <p class="how-step-desc">I document what was built as a manual, hand over full access, and stay available for the first few weeks of real usage, since that's when most errors tend to show up.</p>
-        </div>
-      </div>
-    </div>
-
-    <p class="how-closing">I do not just automate. I make sure it stands the test of time once real customers and real data start coming in.</p>
   </section>
 
   <section id="projects">
     <div class="sec-head">
-      <span class="sec-num">03</span>
-      <div>
-        <div class="kicker">Projects</div>
-        <h2 class="sec-title">Selected <span class="accent">Builds</span></h2>
-      </div>
+      <span class="sec-num">02</span>
+      <h2 class="sec-title">Selected <span class="accent">Builds</span></h2>
     </div>
 
     <div class="project">
       <div class="project-title">MyEzer ICAN Study Bot</div>
-      <div class="project-sub">AI Powered Study Bot · n8n · Supabase · Claude API · Google Drive</div>
-      <p class="project-desc">Built a Telegram based paid study assistant for professional accounting exam prep. Designed a 16 week curriculum delivery system with a RAG pipeline over real past question content, an AI agent driven registration flow, and an integrated payment gate.</p>
+      <div class="project-sub">AI-Powered Study Bot · n8n · Supabase · Claude API · Google Drive</div>
+      <p class="project-desc">Built a Telegram-based paid study assistant for professional accounting exam prep. Designed a 16-week curriculum delivery system with a RAG pipeline over real past-question content, an AI agent-driven registration flow, and an integrated payment gate.</p>
     </div>
 
     <div class="project">
-      <div class="project-title">Restaurant Voice Agent &amp; Ordering System</div>
-      <div class="project-sub">Voice AI Agent · n8n · Airtable · CRM Integration · Admin Dashboard</div>
-      <p class="project-desc">Built a voice agent that takes phone orders, books reservations, and answers questions about the restaurant. Every order is logged in Airtable and sent through to the CRM team automatically. The system also includes a landing page with an admin dashboard showing all orders placed on a given day.</p>
-      <a class="project-link" href="https://youtu.be/Ggn5_zM9eFc" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 3l14 9-14 9V3z"/></svg>
-        Watch Demo
-      </a>
+      <div class="project-title">MyEzer LinkedIn System</div>
+      <div class="project-sub">Automated Content Pipeline · Claude · Leonardo AI · GitHub Pages</div>
+      <p class="project-desc">Built an end-to-end AI content generation and publishing pipeline combining Claude, Leonardo AI, and ScreenshotOne. Iterated on AI agent prompts to improve output diversity and debugged workflow architecture for reliability.</p>
     </div>
 
     <div class="project">
-      <div class="project-title">MyEzer Automatic Content Creator and Publisher</div>
-      <div class="project-sub">Automated Content Pipeline · Claude · Leonardo AI · GitHub Pages · LinkedIn</div>
-      <p class="project-desc">Built a full AI content generation and publishing pipeline for LinkedIn, combining Claude, Leonardo AI, and ScreenshotOne. Iterated on AI agent prompts to improve output diversity and debugged workflow architecture for reliability.</p>
-    </div>
-
-    <div class="project">
-      <div class="project-title">Real Estate Investors Onboarding OS</div>
+      <div class="project-title">Project X</div>
       <div class="project-sub">Client Registration &amp; Investment Platform · Built with Claude Code</div>
-      <p class="project-desc">Designed and built a complete client facing web platform covering landing page, registration and co development intake, payment, and confirmation flows. Implemented a Google Forms style data intake screen, light and dark theme switching, and a live AI powered support chat with OTP based email verification, integrated via Make.com automation webhooks for real time AI response handling.</p>
-      <a class="project-link" href="https://onyebuchiochiedike.github.io/project-x-investor-os/" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14L21 3"/></svg>
-        View Live Demo
-      </a>
+      <p class="project-desc">Designed and built a complete client-facing web platform covering landing page, registration and co-development intake, payment, and confirmation flows. Implemented a Google Forms-style data intake screen, light/dark theme switching, and a live AI-powered support chat with OTP-based email verification, integrated via Make.com automation webhooks for real-time AI response handling.</p>
     </div>
 
     <div class="project">
@@ -614,26 +412,55 @@
     </div>
   </section>
 
-  <section id="testimonials">
+  <section id="experience">
     <div class="sec-head">
-      <span class="sec-num">04</span>
-      <h2 class="sec-title">Client <span class="accent">Feedback</span></h2>
+      <span class="sec-num">03</span>
+      <h2 class="sec-title">Work <span class="accent">Experience</span></h2>
     </div>
 
-    <div class="testimonial">
-      <div class="testimonial-quote">"This operating system is good. I will tell the shareholders so that when we are ready we can implement it, because me, I do not like stress. I want something that will be done at ease."</div>
-      <div class="testimonial-source">Ardent Limited, Real Estate Investors Onboarding OS</div>
+    <div class="project">
+      <div class="project-title">Executive Assistant &amp; Accounts Support</div>
+      <div class="project-sub">Ardent Ltd · Lagos · Nov 2024 to Present</div>
+      <ul class="project-list">
+        <li>Support the CEO by coordinating schedules, documents and daily business tasks.</li>
+        <li>Record transactions, track payments and expenses, and prepare investor receipts.</li>
+        <li>Manage client and investor data in Google Forms so key information is easy to find.</li>
+        <li>Review reports and financial figures, and correct errors before they reach company records.</li>
+      </ul>
     </div>
 
-    <div class="testimonial">
-      <div class="testimonial-quote">"That was easy, and the reply mail got everything, we thought we sent out personal mails back to them. I love the idea of it. We would do it again when we have a bigger program come up."</div>
-      <div class="testimonial-source">Engrite Innovation, Registration Form Automation</div>
+    <div class="project">
+      <div class="project-title">Researcher, Data Analyst &amp; Academic Support</div>
+      <div class="project-sub">Remote and Onsite · 2022</div>
+      <ul class="project-list">
+        <li>Turn journals, books and term papers into organised reports and data-driven insights.</li>
+        <li>Build questionnaires and research questions, and work with colleagues on data collection.</li>
+        <li>Coordinate institutional payments such as school fees and dues.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">NYSC Member and Community Development President</div>
+      <div class="project-sub">Tafawa Balewa, Bauchi · 2023 to 2024</div>
+      <ul class="project-list">
+        <li>Taught daily lessons to primary school students.</li>
+        <li>Led charity activities, awareness campaigns and environmental sanitation projects.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Sales Representative</div>
+      <div class="project-sub">Globacom · Abia State · 2018 to 2019</div>
+      <ul class="project-list">
+        <li>Grew sales by 27% by opening new markets and converting prospects into customers.</li>
+        <li>Built customer relationships that drove repeat business.</li>
+      </ul>
     </div>
   </section>
 
   <section id="education">
     <div class="sec-head">
-      <span class="sec-num">05</span>
+      <span class="sec-num">04</span>
       <h2 class="sec-title">Education</h2>
     </div>
     <div class="edu-panel">
@@ -648,8 +475,15 @@
     </div>
   </section>
 
+  <div class="cta">
+    <p>Have a repeated task slowing your team down? Tell me about it and I will show you how to automate it.</p>
+    <div class="btn-row">
+      <a class="btn btn-solid" href="mailto:ochiedikejonathan@gmail.com?subject=Automation%20enquiry">Email me your workflow</a>
+    </div>
+  </div>
+
   <footer>
-    Jonathan Ochiedike : AI &amp; Automation Specialist
+    Jonathan Ochiedike | AI &amp; Automation Specialist
   </footer>
 
 </div>

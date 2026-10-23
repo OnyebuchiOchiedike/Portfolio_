@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jonathan Ochiedike | Digital Solutions Specialist</title>
+<title>Jonathan Ochiedike | Automation Engineer &amp; Technical Solutions Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -274,6 +274,17 @@
     color:#C6C1BA;
   }
 
+  .mini-head{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px; letter-spacing:.16em; text-transform:uppercase;
+    color:var(--orange); margin:38px 0 16px;
+  }
+  .mini-grid{ display:grid; grid-template-columns:repeat(2, 1fr); gap:18px; }
+  @media (max-width:640px){ .mini-grid{ grid-template-columns:1fr; } }
+  .mini-grid .project{ margin-bottom:0; padding:22px 22px 20px; }
+  .mini-grid .project-title{ font-size:16px; }
+  .mini-grid .project-desc{ font-size:14px; }
+
   .project-list{ list-style:none; }
   .project-list li{
     position:relative; padding-left:18px; margin-bottom:8px;
@@ -338,11 +349,11 @@
       <div>
         <div class="kicker">Portfolio / 2026</div>
         <div class="name">Jonathan Ochiedike</div>
-        <div class="role">Digital Solutions Specialist &amp; Executive Assistant <span>· Building systems that ship</span></div>
+        <div class="role">Automation Engineer &amp; Technical Solutions Developer <span>· Building systems that ship</span></div>
       </div>
     </div>
 
-    <p class="summary">I started out in accounting, but over the past couple of years, my focus has naturally shifted toward building digital solutions and automation systems that solve practical problems for real businesses. What began as simple curiosity has grown into hands-on execution, allowing me to design workflows, integrate AI into client systems, and ship functional tools that people actually use, ranging from intelligent study bots and membership management systems to automated content pipelines. Currently, I balance this technical drive with my role as an Executive Assistant and Accounts Support professional at Ardent Ltd, where managing daily investor receipts, payments, and corporate records gives me the perfect vantage point to spot operational inefficiencies in real-time and build tools to fix them. I inherently bring the discipline, compliance focus, and structured thinking of a finance background to how I build, and I am continuously deepening my technical grounding in AI and automation workflows to help modern organizations scale their daily operations smoothly and efficiently.</p>
+    <p class="summary">I started out in accounting, but over the past couple of years, my focus has naturally shifted toward building digital solutions and automation systems that solve practical problems for real businesses. What began as simple curiosity has grown into hands-on execution, allowing me to design workflows, integrate AI into client systems, and ship functional tools that people actually use, ranging from intelligent study bots, voice agents and membership management systems to document-to-audio platforms and automated content pipelines. Currently, I balance this technical drive with my role as an Executive Assistant and Accounts Support professional at Ardent Ltd, where managing daily investor receipts, payments, and corporate records gives me the perfect vantage point to spot operational inefficiencies in real-time and build tools to fix them. I inherently bring the discipline, compliance focus, and structured thinking of a finance background to how I build, and I am continuously deepening my technical grounding in AI and automation workflows to help modern organizations scale their daily operations smoothly and efficiently.</p>
 
     <div class="btn-row">
       <a class="btn btn-solid" href="https://www.linkedin.com/in/jonathan-ochiedike/" target="_blank" rel="noopener">
@@ -370,12 +381,16 @@
       <h2 class="sec-title">Skill <span class="accent">Set</span></h2>
     </div>
     <div class="skill-grid">
-      <div class="skill-chip">n8n Workflow Automation</div>
+      <div class="skill-chip">n8n, Make &amp; Zapier Automation</div>
+      <div class="skill-chip">APIs &amp; Webhooks</div>
       <div class="skill-chip">AI Integration: Claude API, RAG, AI Agents</div>
-      <div class="skill-chip">Airtable &amp; Supabase</div>
-      <div class="skill-chip">AI/ML Fundamentals</div>
-      <div class="skill-chip">HTML / CSS</div>
+      <div class="skill-chip">Voice Agents (Vapi)</div>
+      <div class="skill-chip">Supabase, SQL &amp; Airtable</div>
+      <div class="skill-chip">JavaScript &amp; Python</div>
+      <div class="skill-chip">Vercel Deployment</div>
       <div class="skill-chip">Claude Code</div>
+      <div class="skill-chip">AI/ML Fundamentals</div>
+      <div class="skill-chip">Process Improvement &amp; Quality Control</div>
       <div class="skill-chip">Accounting, Bookkeeping &amp; Reconciliation</div>
       <div class="skill-chip">Research &amp; Data Analysis</div>
     </div>
@@ -391,6 +406,18 @@
       <div class="project-title">MyEzer ICAN Study Bot</div>
       <div class="project-sub">AI-Powered Study Bot · n8n · Supabase · Claude API · Google Drive</div>
       <p class="project-desc">Built a Telegram-based paid study assistant for professional accounting exam prep. Designed a 16-week curriculum delivery system with a RAG pipeline over real past-question content, an AI agent-driven registration flow, and an integrated payment gate.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Acada Lumiscene</div>
+      <div class="project-sub">Document Listening Platform · Supabase · SQL · Edge Functions · Vercel</div>
+      <p class="project-desc">Developed an intelligent platform that turns documents into audio for easier access to information. Worked across Supabase databases, SQL queries and Edge Functions for the backend, connected application components to backend services, deployed through Vercel, configured domains, and investigated and fixed integration and database issues to improve reliability.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Restaurant Ordering &amp; Voice Agent Automation</div>
+      <div class="project-sub">Mama T's Kitchen · Hira's Place · n8n · Make · Vapi · JavaScript · Webhooks</div>
+      <p class="project-desc">Built workflows covering customer order logging, reservation processing and follow-up on cancelled orders. Integrated voice agents that handle customer requests and trigger the right actions across connected services, and contributed directly to live deployment.</p>
     </div>
 
     <div class="project">
@@ -410,6 +437,34 @@
       <div class="project-sub">Membership Management System · n8n · Airtable · Fillout · Telegram</div>
       <p class="project-desc">Designed and built a full membership lifecycle automation covering registration, expiry alerts, and renewals.</p>
     </div>
+
+    <div class="mini-head">More Automations</div>
+    <div class="mini-grid">
+    <div class="project">
+      <div class="project-title">Event Registration Automation</div>
+      <div class="project-sub">n8n · Make · Google Forms · Email</div>
+      <p class="project-desc">Connected Google Forms to email acknowledgements and event details, and consolidated attendee data into organised records without manual table creation.</p>
+    </div>
+
+      <div class="project">
+      <div class="project-title">Bulk Email Web App</div>
+      <div class="project-sub">Web App · CSV Processing · Email Integration</div>
+      <p class="project-desc">Upload a CSV of recipients and send in one step, replacing repetitive manual email handling.</p>
+    </div>
+
+      <div class="project">
+      <div class="project-title">Automated Website Publishing</div>
+      <div class="project-sub">Workflow Automation · Scheduled Publishing</div>
+      <p class="project-desc">Publishes content to a client's website at a set time every morning, with no daily manual work.</p>
+    </div>
+
+      <div class="project">
+      <div class="project-title">Dental Clinic Enquiry Routing</div>
+      <div class="project-sub">Workflow Automation · Conditional Routing</div>
+      <p class="project-desc">Categorises enquiries by service, routes them (such as child eye care and surgery) to the right support staff, and hands client details to reception for booking.</p>
+    </div>
+
+    </div>
   </section>
 
   <section id="experience">
@@ -424,36 +479,45 @@
       <ul class="project-list">
         <li>Support the CEO by coordinating schedules, documents and daily business tasks.</li>
         <li>Record transactions, track payments and expenses, and prepare investor receipts.</li>
-        <li>Manage client and investor data in Google Forms so key information is easy to find.</li>
+        <li>Build and manage data tracking workflows in Google Forms so key information is easy to find.</li>
         <li>Review reports and financial figures, and correct errors before they reach company records.</li>
       </ul>
     </div>
 
     <div class="project">
       <div class="project-title">Researcher, Data Analyst &amp; Academic Support</div>
-      <div class="project-sub">Remote and Onsite · 2022</div>
+      <div class="project-sub">Remote · Abia &amp; Lagos · Mar 2022 to Jun 2026</div>
       <ul class="project-list">
-        <li>Turn journals, books and term papers into organised reports and data-driven insights.</li>
-        <li>Build questionnaires and research questions, and work with colleagues on data collection.</li>
-        <li>Coordinate institutional payments such as school fees and dues.</li>
+        <li>Turned journals, books and term papers into organised reports and data-driven insights.</li>
+        <li>Designed survey questionnaires and data-gathering tools to map out practical project solutions.</li>
+        <li>Managed institutional fee workflows and transaction records for error-free daily processing.</li>
       </ul>
     </div>
 
     <div class="project">
-      <div class="project-title">NYSC Member and Community Development President</div>
-      <div class="project-sub">Tafawa Balewa, Bauchi · 2023 to 2024</div>
+      <div class="project-title">NYSC Teacher &amp; Community Development President</div>
+      <div class="project-sub">Federal Government of Nigeria · Tafawa Balewa, Bauchi · Nov 2023 to Nov 2024</div>
       <ul class="project-list">
-        <li>Taught daily lessons to primary school students.</li>
-        <li>Led charity activities, awareness campaigns and environmental sanitation projects.</li>
+        <li>Taught primary students computer studies, mathematics and general knowledge.</li>
+        <li>Elected Community Development President after serving in the Media and Environmental groups.</li>
+        <li>Led charity initiatives and fundraising campaigns, and supervised volunteers and resources through to delivery.</li>
+      </ul>
+    </div>
+
+    <div class="project">
+      <div class="project-title">General Secretary &amp; Media Coordinator, NCCF</div>
+      <div class="project-sub">Apr 2024 to Nov 2024</div>
+      <ul class="project-list">
+        <li>Managed interstate programme logistics and costings to keep events cost-effective and on schedule.</li>
       </ul>
     </div>
 
     <div class="project">
       <div class="project-title">Sales Representative</div>
-      <div class="project-sub">Globacom · Abia State · 2018 to 2019</div>
+      <div class="project-sub">Globacom · Abia State · Mar 2018 to Mar 2019</div>
       <ul class="project-list">
-        <li>Grew sales by 27% by opening new markets and converting prospects into customers.</li>
-        <li>Built customer relationships that drove repeat business.</li>
+        <li>Won new customers across multiple territories by opening untapped local markets.</li>
+        <li>Built customer relationships and feedback loops that drove repeat business.</li>
       </ul>
     </div>
   </section>
@@ -469,7 +533,7 @@
         <div class="edu-year">2026</div>
       </div>
       <div class="edu-row">
-        <div class="edu-name">B.Sc. in Accounting</div>
+        <div class="edu-name">B.Sc. in Accounting, Abia State University (Second Class)</div>
         <div class="edu-year">2021</div>
       </div>
     </div>
@@ -483,7 +547,7 @@
   </div>
 
   <footer>
-    Jonathan Ochiedike | AI &amp; Automation Specialist
+    Jonathan Ochiedike | Automation Engineer &amp; Technical Solutions Developer
   </footer>
 
 </div>
